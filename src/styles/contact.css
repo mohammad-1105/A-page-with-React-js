@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.container h1 {
+    font-size: 3rem;
+    background-color: rgba(255, 192, 203, 0.596);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(5, 5, 48);
+}
+
+.contact-box {
+    margin-bottom: 3rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nameBox{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+   
+}
+.nameBox div {
+    display: flex;
+}
+
+input {
+    margin:5px;
+    border:none;
+    border-radius: 4px;
+    height: 30px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 0 0 2px;
+}
+
+.nameBox input{
+    width: 50%; 
+}
+.emailBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.emailBox input {
+    width: 100%;
+}
+
+
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 7px 0 3px;
+}
+
+
+.messageBox textarea {
+    margin:5px;
+    border:none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 0 0 2px;
+}
+
+.btn {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+         
+.btn button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    margin: 10px;
+    padding: 4px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(8, 8, 8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;          
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  .btn button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 

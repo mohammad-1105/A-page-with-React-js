@@ -1,0 +1,55 @@
+footer {
+    background-color:black;
+    color: white;
+    height: 60px;
+    padding: 12px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    /* position:fixed;
+    bottom: 0; */
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.footerTitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footerTitleBox h1 {
+    font-family: 'Merriweather', serif;
+
+}
+.footerTitleBox p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.followUsLinkBox {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.followUsLinkBox h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.followUsLinkBox div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.followUsLinkBox div a {
+    font-size: 1.6rem;
+}
+

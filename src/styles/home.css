@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+.home {
+
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+
+.home::before {
+    content: "";
+    background: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+    width: 100%;
+    height: 110vh;
+    z-index: -1;
+    position: absolute;
+    filter: blur(3px);
+
+   
+    
+
+
+}
+.home0 {
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+.home0::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.home h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(90deg, #1CB5E0 0%, #808083 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    margin-right: 20px;
+}
+
+.home p {
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-right: 20px;
+    background-color: red;
+
+}
+
+.home2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(5, 5, 51);
+
+}
+
+
+
+.home2 img {
+    width: 30%;
+    animation: imgUp 0.7s linear infinite alternate;
+}
+
+@keyframes imgUp {
+    to {
+        transform: translateY(-10px);
+    }
+
+}
+
+.home2 div {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.home2 div p {
+    font-family: 'Poppins', 'sans-serif';
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+
+.home2 div p::selection {
+    color: rgba(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+.home3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(5, 5, 51);
+    padding-block: 4rem;
+    
+}
+
+.home3 div {
+    height: 80%;
+    width: 70%;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 200px 200px 0;
+    
+
+}
+
+.home3 div h1 {
+    margin-block: 2.3rem;
+    user-select: none;
+    border-bottom: 2px solid black;
+}
+
+
+
+.home3 p {
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home3 p::selection {
+    background-color: rgba(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.home4 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(5, 5, 51);
+    display: flex;
+    justify-content: flex-end;
+    padding-block: 4rem;
+}
+
+.home4 > div { 
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(17, 17, 212, 0.833);
+    width: 70%;
+    min-height: 70vh;
+    padding: 1rem;
+    border-radius: 200px 0 0 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home4 > div > h1 {
+    color: white;
+    font-size: 3rem;
+    padding: .7rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+}
+
+.home4 article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.home4 article div {
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin: 0 2rem;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 8rem;
+    width: 8rem;
+    background-color: white;
+    border-radius: 50%;
+    transition:all .3s;
+    animation: imgUp 1s linear infinite alternate;
+    
+}
+
+.home4 article div:hover {
+    filter: invert(1);
+}
+
+.home4 article div svg {
+    font-size: 3rem;
+    border-radius: 90%;
+}
+
+.home4 article div p {
+    font-size: .9rem;
+    font-weight: 900;
+    font-family: cursive;
+}
