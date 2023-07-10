@@ -1,122 +1,90 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.container h1 {
-    font-size: 3rem;
-    background-color: rgba(255, 192, 203, 0.596);
+.contactMainContainer {
+    height: 100vh;
     width: 100%;
-    text-align: center;
-}
-
-
-
-
-label {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    color: rgb(5, 5, 48);
-}
-
-.contact-box {
-    margin-bottom: 3rem;
-    width: 80%;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 65px;
-}
-form {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    font-family: monospace;
+    color:rgb(202, 199, 199);
 }
 
-.nameBox{
+form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
+    width: 100%;
+}
+
+form h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.nameLabelInputBox, .emailLabelInputBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-block:13px;
+}
+ 
+label {
+    font-weight: bold;
+    font-size: 1.4rem;
    
 }
-.nameBox div {
-    display: flex;
-}
 
-input {
-    margin:5px;
-    border:none;
-    border-radius: 4px;
-    height: 30px;
-    padding: 10px;
-    font-size: 1rem;
-    box-shadow: 0 0 2px;
-}
-
-.nameBox input{
-    width: 50%; 
-}
-.emailBox {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-.emailBox input {
-    width: 100%;
-}
-
-
-.messageBox {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 7px 0 3px;
-}
-
-
-.messageBox textarea {
-    margin:5px;
-    border:none;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 1rem;
-    box-shadow: 0 0 2px;
-}
-
-.btn {
-    /* background-color: blue; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-         
-.btn button {
-    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
-    margin: 10px;
-    padding: 4px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(8, 8, 8);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;          
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
+.textareaDiv > textarea, input {
     display: block;
+    width: 100%;
     border: none;
-  }
+    outline: none;
+    padding: 12px;
+    font-size: large;
+    border-radius:3px;
+    background-color: transparent;
+    box-shadow: 0px 0px 1px rgb(113, 111, 111);
+    
+}
+textarea:focus, input:focus{
+    box-shadow: 0px 0px 2px rgb(114, 54, 54);
+}
+textarea:focus::placeholder, input:focus::placeholder {
+    color: rgb(113, 26, 26);
+    letter-spacing: 5px;
+    transition: .4s;
+}
 
-  .btn button:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
- 
+.textareaDiv {
+    width: 50%;
+}
+
+.textareaDiv > h3 {
+    font-family:monospace;
+    font-size: 1.4rem;
+}
+
+textarea {
+    margin-block: 13px;
+}
+
+.formSubmitBtn {
+    border: none ;
+    outline:1px solid brown;
+    padding: 8px 42px ;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    margin: 10px 0px;
+}
+.formSubmitBtn:hover {
+    background-color: rgb(141, 21, 21);
+
+}
+.formSubmitBtn:active{
+    background-color: rgb(65, 0, 0);
+    color: white;
+}
